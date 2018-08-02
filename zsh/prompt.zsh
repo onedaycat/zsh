@@ -1,6 +1,3 @@
-export CLICOLOR=true
-
-autoload colors && colors
 
 if (( $+commands[git] ))
 then
@@ -54,9 +51,7 @@ directory_name() {
   echo "%{$fg_bold[cyan]%}%1/%\/%{$reset_color%}"
 }
 
-export PROMPT="$(directory_name) $(git_dirty)$(need_push)"
-export PROMPT=$PROMPT$'\n› '
-# export PROMPT=$PROMPT$(directory_name)
+export PROMPT=$'$(directory_name) $(git_dirty)$(need_push)\n› '
 
 set_prompt () {
   export RPROMPT="%{$fg_bold[cyan]%}%{$reset_color%}"

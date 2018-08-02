@@ -1,5 +1,10 @@
 export ZSH=$HOME/.zsh
 
+autoload -U colors
+colors
+
+setopt PROMPT_SUBST
+
 if [[ -a ~/.localrc ]]
 then
   source ~/.localrc
@@ -28,5 +33,4 @@ do
 done
 
 unset config_files
-
 
