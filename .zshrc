@@ -1,9 +1,9 @@
-export ZSH=$HOME/.zsh
+export ZSH_CUSTOM=$HOME/.zsh
 
-autoload -U colors
-colors
+# autoload -U colors
+# colors
 
-setopt PROMPT_SUBST
+# setopt PROMPT_SUBST
 
 if [[ -a ~/.localrc ]]
 then
@@ -12,7 +12,7 @@ fi
 
 # all of zsh files
 typeset -U config_files
-config_files=($ZSH/**/*.zsh)
+config_files=($ZSH_CUSTOM/**/*.zsh)
 
 # load PATH
 for file in ${(M)config_files:#*/path.zsh}
@@ -33,4 +33,3 @@ do
 done
 
 unset config_files
-
