@@ -15,6 +15,11 @@ Install zsh
 brew install zsh
 ```
 
+Make zsh as default
+```sh
+chsh -s /bin/zsh
+```
+
 Install oh-my-zsh
 
 ```sh
