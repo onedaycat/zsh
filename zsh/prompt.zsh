@@ -1,5 +1,5 @@
 local ret_status="%(?:%{$fg_bold[green]%}➜ :%{$fg_bold[red]%}➜ )"
-PROMPT=$'%{$fg[cyan]%}%c%{$reset_color%} $(git_prompt_info)\n${ret_status} '
+PROMPT=$'%{$fg[cyan]%}%c%{$reset_color%} $(git_prompt_info)\n➜ '
 
 
 # if (( $+commands[git] ))
@@ -54,7 +54,7 @@ PROMPT=$'%{$fg[cyan]%}%c%{$reset_color%} $(git_prompt_info)\n${ret_status} '
 #   echo "%{$fg_bold[cyan]%}%1/%\/%{$reset_color%}"
 # }
 
-# export PROMPT=$'$(directory_name) $(git_dirty)$(need_push)\n› '
+# export PROMPT=$'$(directory_name) $(git_dirty)$(need_push)\n➜ '
 
 # set_prompt () {
 #   export RPROMPT="%{$fg_bold[cyan]%}%{$reset_color%}"
