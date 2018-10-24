@@ -6,7 +6,7 @@
 clone this project into $HOME/.zsh
 
 ```sh
-git clone git@bitbucket.org:witooh/zsh.git ~/.zsh
+git clone git@bitbucket.org:onedaycat/zsh.git ~/.zsh
 ```
 
 Install zsh
